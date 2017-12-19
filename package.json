@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "start": "npx babel-node --extensions '.ts,.tsx' lib/index.ts",
-    "build": "npx babel --extensions '.ts,.tsx' --source-maps --out-dir dist lib"
+    "build":
+      "npx babel --extensions '.ts,.tsx' --source-maps --out-dir dist lib",
+    "serve": "node --require source-map-support/register dist/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.35",

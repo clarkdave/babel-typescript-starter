@@ -4,15 +4,17 @@ import { Cat } from '../Cat'
 import { Context } from 'koa'
 import { Dog } from '../Dog'
 
-export const getAnimalKindFromContext = (ctx: Context): AnimalKind => {
-  const kind = String(ctx.query.kind).toLowerCase()
+export const getAnimalKindFromQuery = (query: {
+  kind?: string
+}): AnimalKind => {
+  const kind = query.kind ? String(query.kind).toLowerCase() : 'dog'
   switch (kind) {
     case 'dog':
       return AnimalKind.Dog
     case 'cat':
       return AnimalKind.Cat
     default:
-      return AnimalKind.Dog
+      throw new Error(`Unknown kind of animal: ${kind}`)
   }
 }
 

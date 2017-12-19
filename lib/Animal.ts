@@ -1,12 +1,12 @@
 export abstract class Animal {
   constructor(readonly name: string) {}
 
-  abstract speak(): string
+  abstract sound(): string
 
   toObject() {
     return {
       name: this.name,
-      speaking: this.speak(),
+      sound: this.sound(),
     }
   }
 }

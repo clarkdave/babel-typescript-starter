@@ -1,7 +1,7 @@
 import { Animal } from './Animal'
 
 export class Dog extends Animal {
-  speak() {
+  sound() {
     return this.bark()
   }
 
