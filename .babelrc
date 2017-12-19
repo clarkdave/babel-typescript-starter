@@ -7,8 +7,10 @@
           "node": "current"
         }
       }
-    ],
-    "@babel/preset-stage-1",
-    "@babel/preset-typescript"
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-typescript",
+    "@babel/plugin-proposal-decorators"
   ]
 }
