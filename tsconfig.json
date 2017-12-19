@@ -21,5 +21,6 @@
     "strictNullChecks": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "exclude": ["node_modules", "@types", "tmp", "build"]
+  "include": ["lib/**/*"],
+  "exclude": ["node_modules", "@types", "tmp", "build", "dist"]
 }

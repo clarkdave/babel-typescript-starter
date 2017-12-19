@@ -1,13 +1,14 @@
 {
   "presets": [
-    "@babel/preset-typescript",
     [
       "@babel/preset-env",
       {
         "targets": {
-          "node": "9.2.0"
+          "node": "current"
         }
       }
-    ]
+    ],
+    "@babel/preset-stage-1",
+    "@babel/preset-typescript"
   ]
 }
