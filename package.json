@@ -1,0 +1,25 @@
+{
+  "name": "babel-typescript-starter",
+  "private": true,
+  "scripts": {
+    "start": "npx babel-node --extensions '.ts,.tsx' lib/index.ts",
+    "build": "npx babel --extensions '.ts,.tsx' --source-maps --out-dir dist lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.35",
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/node": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
+    "@babel/preset-react": "^7.0.0-beta.35",
+    "@babel/preset-typescript": "^7.0.0-beta.35",
+    "@babel/register": "^7.0.0-beta.35",
+    "ava": "^0.24.0",
+    "prettier": "^1.9.2",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.43",
+    "koa": "^2.4.1",
+    "source-map-support": "^0.5.0"
+  }
+}

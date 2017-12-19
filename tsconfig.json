@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "target": "es2017",
+    "lib": ["es6", "dom", "dom.iterable", "scripthost"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictFunctionTypes": false,
+    "strictNullChecks": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": ["node_modules", "@types", "tmp", "build"]
+}
