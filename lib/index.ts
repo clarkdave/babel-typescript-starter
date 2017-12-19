@@ -20,6 +20,11 @@ app.use(async ctx => {
   const kind = getAnimalKindFromQuery(ctx.query)
   const animal = constructAnimal(kind, name)
 
+  // check that optional catch bindings work
+  try {
+    JSON.parse('null')
+  } catch {}
+
   ctx.body = {
     animal: animal.toObject(),
   }

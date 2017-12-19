@@ -218,7 +218,7 @@
   dependencies:
     "@babel/plugin-syntax-object-rest-spread" "7.0.0-beta.35"
 
-"@babel/plugin-proposal-optional-catch-binding@7.0.0-beta.35":
+"@babel/plugin-proposal-optional-catch-binding@7.0.0-beta.35", "@babel/plugin-proposal-optional-catch-binding@^7.0.0-beta.35":
   version "7.0.0-beta.35"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-optional-catch-binding/-/plugin-proposal-optional-catch-binding-7.0.0-beta.35.tgz#44d6e492243e442ab1a686c96ed851b55a459223"
   dependencies:

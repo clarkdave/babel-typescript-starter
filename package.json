@@ -2,11 +2,9 @@
   "name": "babel-typescript-starter",
   "private": true,
   "scripts": {
-    "start":
-      "concurrently --kill-others --names \"tsc,node\" -c \"blue,green\" \"npx tsc --noEmit --pretty --watch\" \"npx nodemon lib/index.ts --exec babel-node --extensions '.ts,.tsx' lib/index.ts\"",
+    "start": "concurrently --kill-others --names \"tsc,node\" -c \"blue,green\" \"npx tsc --noEmit --pretty --watch\" \"npx nodemon lib/index.ts --exec babel-node --extensions '.ts,.tsx' lib/index.ts\"",
     "typecheck": "npx tsc --noEmit --pretty",
-    "build":
-      "npx tsc --noEmit --pretty && npx babel --extensions '.ts,.tsx' --source-maps --out-dir dist lib",
+    "build": "npx tsc --noEmit --pretty && npx babel --extensions '.ts,.tsx' --source-maps --out-dir dist lib",
     "serve": "node --require source-map-support/register dist/index.js"
   },
   "dependencies": {
@@ -20,6 +18,7 @@
     "@babel/core": "^7.0.0-beta.35",
     "@babel/node": "^7.0.0-beta.35",
     "@babel/plugin-proposal-decorators": "^7.0.0-beta.35",
+    "@babel/plugin-proposal-optional-catch-binding": "^7.0.0-beta.35",
     "@babel/plugin-transform-typescript": "^7.0.0-beta.35",
     "@babel/preset-env": "^7.0.0-beta.35",
     "concurrently": "^3.5.1",
